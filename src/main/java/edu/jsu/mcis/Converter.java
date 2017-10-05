@@ -205,10 +205,14 @@ public class Converter {
                 /* Copy row header into first element of "rowdata" */
 
                 // INSERT YOUR CODE HERE
+                rowdata[0] = csvrow[i];
                 
                 /* Copy row elements into remaining elements of "rowdata" */
                 
                 // INSERT YOUR CODE HERE
+                for ( int j = 0; j < elements.length; j++){
+                    rowdata[j+1] = elements[j];
+                }
                 
                 /* Write new row */
                 
